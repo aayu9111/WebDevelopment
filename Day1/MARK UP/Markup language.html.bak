@@ -1,0 +1,9 @@
+<html>
+<head> <title> Markup Language </title>
+<body>
+<h1> Extra Markup language </h1>
+<hr>
+<figure> <center> <img src="image.png" alt="image not found" height="200px" width="200px"/> <br>
+<figcaption> Screenshot </figcaption </center> 
+</figcaption>
+
