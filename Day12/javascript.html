@@ -1,0 +1,47 @@
+<html>
+<head>
+   <script type="text/Javascript">
+        
+       function internalAlert()
+	   {
+	     alert("msg");
+	   }
+       function internalPrompt()
+	   {
+	     var name= prompt(" enter msg");
+		 document.write(name);
+		 console.error(name);
+		 altert("hi"+ name);
+	   }
+	   function internalConfirm()
+	   {
+	     if(confirm("Are you sure?"))
+		 { 
+		     alert("yes");
+		 }
+		 else{
+		      alert("no");    
+		 }
+	   }
+   </script>
+    
+	<script src="demo.js"> </script>
+</head>
+<body>
+	
+	<button type="button" onclick="alert('msg')"> Inline alert </button>
+	<button type="button" onclick="prompt('enter msg')"> Inline prompt </button>
+	<button type="button" onclick="confirm('msg')"> Inline confirm</button>
+	<hr></hr>
+	<button type="button" onclick="internalAlert()"> Internal alert </button>
+	<button type="button" onclick="internalPrompt()"> Internal prompt </button>
+	<button type="button" onclick="internalConfirm()"> Internal confirm</button>
+	<hr></hr>
+	<button type="button" onclick="externalAlert()"> External alert </button>
+	<button type="button" onclick="externalPrompt()"> External prompt </button>
+	<button type="button" onclick="externalConfirm()"> External confirm</button>
+
+
+
+</body>
+</html>
